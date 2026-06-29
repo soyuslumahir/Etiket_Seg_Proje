@@ -1,0 +1,6 @@
+path: C:\Users\soyus\Desktop\etiket-proje
+train: train_etiket_only.txt
+val:   val_etiket_only.txt
+
+nc: 1
+names: ['etiket']

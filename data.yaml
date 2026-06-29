@@ -1,0 +1,19 @@
+train: C:/Users/soyus/Desktop/etiket-proje/train.txt
+val: C:/Users/soyus/Desktop/etiket-proje/val.txt
+
+nc: 14
+names:
+  0: etiket
+  1: TR
+  2: logo
+  3: QR
+  4: rakam_0
+  5: rakam_1
+  6: rakam_2
+  7: rakam_3
+  8: rakam_4
+  9: rakam_5
+  10: rakam_6
+  11: rakam_7
+  12: rakam_8
+  13: rakam_9
