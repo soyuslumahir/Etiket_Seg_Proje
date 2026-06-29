@@ -40,3 +40,5 @@ Uygulama başladığında tarayıcı otomatik olarak açılır.
 
 `best.pt` dosyası repoya dahildir, ek bir indirme gerekmez.  
 Validasyon seti üzerinde etiket/TR/logo/QR sınıfları %100, rakam sınıfları %92–99 precision değerine ulaşmıştır.
+
+> **Not:** Modelin eğitiminde kullanılan sentetik ve gerçek görüntü setleri boyutları nedeniyle repoya dahil edilmemiştir.
