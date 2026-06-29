@@ -1,0 +1,88 @@
+# Dataset ve görüntü klasörleri (çok büyük)
+dataset/
+dataset_aug/
+scenes/
+real_aug/
+real_aug2/
+real_etiket_only/
+raw_images_4000x3000/
+test_gercek_aug/
+test_gercek_aug_out/
+test_raw_output/
+configs/
+
+# YOLO egitim ciktilari ve yedek modeller
+runs/
+*_backup.pt
+yolo*.pt
+
+# Geçici check/preview görselleri
+check*.jpg
+check*.png
+preview*.jpg
+preview_*.png
+mask_check.jpg
+mask_only.jpg
+multi_preview*.jpg
+multi_preview*.png
+single_overlay_test.jpg
+single_test2.jpg
+test_640.jpg
+test_aug_real.jpg
+test_aug_scene.jpg
+test_logo_qr.jpg
+test_pin_3d_comparison.png
+test_pin_corrupt.png
+test_pin_shape.png
+test_pin_shape_mask.png
+logo_rgb_test.jpg
+etk03_raw.jpg
+num_zoom.png
+IMG_3824.PNG
+
+# Eğitim dosya listeleri (makineye özel yollar)
+train.txt
+val.txt
+train_etiket_only.txt
+val_etiket_only.txt
+
+# Veri uretme ve editor scriptleri
+gen_*.py
+aug_new.py
+make_*.py
+editor_gui.py
+etiket_editor.py
+app_v2_stable.py
+
+# Konfigurasyon ve rapor dosyalari
+*.json
+*.docx
+*.md
+!README.md
+
+# Gecici kontrol ve debug scriptleri
+check_*.py
+debug_*.py
+test_synth.py
+test_v4_synth.py
+test_aug_real.py
+test_aug_scene.py
+test_pin_3d.py
+preview_scenes.py
+gen_multi_preview.py
+batch_test.py
+
+# Eski surumler
+app_etiket_only.py
+app_v2.py
+train_v4.py
+train_etiket_only.py
+data_etiket.yaml
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Claude gecici dosyalari
+.claude/
