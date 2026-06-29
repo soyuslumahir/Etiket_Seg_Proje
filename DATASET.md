@@ -8,7 +8,16 @@ Gerçekten çekilmiş kulak etiketi fotoğrafları [Roboflow](https://roboflow.c
 
 ## Sentetik Veri
 
-Gerçek verinin yetersiz kaldığı durumlarda sentetik görüntüler üretildi. Her etiket tipi için geometri ve içerik bilgisi JSON dosyalarında tanımlandı (rakamların konumu, boyutu, yazı tipi vb.). Bu JSON'lar kullanılarak programatik olarak binlerce farklı görüntü ve etiket dosyası otomatik üretildi.
+Gerçek verinin yetersiz kaldığı durumlarda sentetik görüntüler programatik olarak üretildi.
+
+**JSON tabanlı geometri tanımı**  
+Projede iki farklı etiket tipi (tip1, tip2) ve her tipin birden fazla boyut varyantı bulunmaktadır. Her varyant için etiketin fiziksel geometrisi — rakamların konumu, boyutu, TR/logo/QR bölgelerinin yerleri — ayrı bir JSON dosyasında piksel hassasiyetinde tanımlandı. Bu sayede her üretilen görüntüde segmentasyon maskeleri otomatik olarak hesaplanabildi, elle etiketleme gerekmedi.
+
+**Görüntü üretimi**  
+JSON'lardaki geometri bilgisi kullanılarak rastgele rakam kombinasyonları, farklı arka planlar ve aydınlatma koşullarıyla binlerce görüntü üretildi. Üretilen her görüntüyle birlikte YOLO formatında etiket dosyası da otomatik oluşturuldu.
+
+**Augmentation**  
+Hem sentetik hem gerçek görüntülere perspektif bozulması, renk değişimi, bulanıklaştırma ve gürültü gibi augmentasyonlar uygulanarak modelin farklı çekim koşullarına karşı dayanıklılığı artırıldı.
 
 ## Eğitim Süreci
 
