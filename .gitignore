@@ -59,6 +59,7 @@ app_v2_stable.py
 *.docx
 *.md
 !README.md
+!DATASET.md
 
 # Gecici kontrol ve debug scriptleri
 check_*.py
