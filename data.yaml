@@ -1,5 +1,6 @@
-train: C:/Users/soyus/Desktop/etiket-proje/train.txt
-val: C:/Users/soyus/Desktop/etiket-proje/val.txt
+path: dataset
+train: train/images
+val: val/images
 
 nc: 14
 names:
